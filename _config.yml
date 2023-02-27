@@ -54,3 +54,14 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+
+# Set cache-control headers for static assets
+defaults:
+  - scope:
+      path: "assets/*"
+    values:
+      cache_control: "public, max-age=31536000, immutable"
+  - scope:
+      path: "img/*"
+    values:
+      cache_control: "public, max-age=31536000, immutable" 
