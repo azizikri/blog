@@ -15,8 +15,10 @@
       href="{{ '/assets/css/styles.css' | relative_url }}"
     />
     <!-- <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" /> -->
+    {% if site.lightavatar or site.darkavatar %}
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.lightavatar | relative_url }}" media="(prefers-color-scheme: light)">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.darkavatar | relative_url }}" media="(prefers-color-scheme: dark)">
+    {% endif %}
     <!-- Meta Theme Color is also supported on Safari and Chrome -->
     <meta
       name="theme-color"

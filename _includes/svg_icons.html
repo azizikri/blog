@@ -1,6 +1,7 @@
 {% if site.footer-links.email %}
 <a class="footer-icon-links" 
   href="mailto:{{ site.footer-links.email }}" 
+  aria-label="{{ site.author }}'s email"
   target="_blank"><svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -18,6 +19,7 @@
 <a
   class="footer-icon-links"
   href="https://instagram.com/{{ site.footer-links.instagram }}"
+  aria-label="{{ site.author }}'s instagram
   target="_blank"><svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -34,6 +36,7 @@
 <a
   class="footer-icon-links"
   href="https://www.twitter.com/{{ site.footer-links.twitter }}"
+  aria-label="{{ site.author }}'s twitter"
   target="_blank"><svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -50,6 +53,7 @@
 <a
   class="footer-icon-links"
   href="https://www.facebook.com/{{ site.footer-links.facebook }}"
+  aria-label="{{ site.author }}'s facebook"
   target="_blank"><svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -66,6 +70,7 @@
 <a
   class="footer-icon-links"
   href="https://github.com/{{ site.footer-links.github }}"
+  aria-label="{{ site.author }}'s github"
   target="_blank"><svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -82,6 +87,7 @@
 <a
   class="footer-icon-links"
   href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}"
+  aria-label="{{ site.author }}'s linkedin"
   target="_blank"><svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -96,6 +102,7 @@
 ></a>
 {% endif %} {% if site.footer-links.rss %}
 <a class="footer-icon-links" href="{{ site.baseurl }}/feed.xml"
+aria-label="{{ site.author }}'s rss"
   ><svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
