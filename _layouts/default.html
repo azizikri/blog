@@ -26,6 +26,8 @@
       content="#111111"
       media="(prefers-color-scheme: light)"
     />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.lightavatar | relative_url }}" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.darktavatar | relative_url }}" media="(prefers-color-scheme: dark)">
     {% seo %} {% feed_meta %} {%- if jekyll.environment == 'production' and
     site.google_analytics -%} {%- include google-analytics.html -%} {%- endif
     -%}
